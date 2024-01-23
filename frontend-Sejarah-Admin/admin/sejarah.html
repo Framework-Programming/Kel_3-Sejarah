@@ -83,14 +83,9 @@
                 <div class="col-12">
                     <div class="Sejarah">
                         <h1><font face="agerial" size="6" color="green">Sejarah MUI</font></h1>
-                        <table border="1" align="center" color="green">
-                            <tr>
-                                <td colspan="2">
-                                    <CENTER><font face="agerial" size="6" color="green">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ratione corporis temporibus quam assumenda quos veritatis est adipisci neque! Accusamus reiciendis quisquam officia perspiciatis dignissimos ullam vel voluptatem, laborum similique nam eaque rerum hic sequi quaerat eos unde quasi voluptatum et earum itaque illo voluptate quis! Molestias illum deleniti quisquam assumenda hic nihil, illo accusantium porro, molestiae, praesentium voluptates sequi excepturi. Sint laudantium quia enim repudiandae obcaecati nemo autem? Quaerat aliquam corporis nihil ad animi placeat, deserunt reiciendis, praesentium assumenda minima quisquam rerum excepturi distinctio sapiente cupiditate et illo nulla dolore molestiae tempora, dolorem eligendi at dicta rem. Sapiente illum excepturi accusamus, ea laborum iste, asperiores similique sed ipsam hic voluptates voluptatem nulla illo temporibus? Ab, deleniti aut iure eum distinctio itaque excepturi nisi sapiente magni a doloribus placeat enim iusto non tempora maxime ex! Doloremque ullam perferendis</font></CENTER>
-                            </td>
-                            </tr>
-                            </table>
-                            <button type="button" class="btn btn-success" style="float: right;" data-toggle="modal" data-target="#addItemModal" >Simpan</button>
+                            <input type="hidden" id="idSejarah">
+                            <textarea style="border: 1px solid green; margin-bottom: 10px; min-height: 600px;" class="form-control" id="isiSejarahContent"></textarea>
+                            <button type="button" class="btn btn-success" style="float: right;" data-toggle="modal" onclick="simpanSejarah()" >Simpan</button>
                     </div>
                 </div>
             </div>
@@ -106,10 +101,9 @@
                     </div>
                     <div class="modal-body">
                         <form id="addItemForm">
-                           
                             <div class="form-group">
-                                <label for="itemDescription">Isi Sejarah</label>
-                                <textarea class="form-control" id="itemDescription" required></textarea>
+                                <label for="isiSejarahTambah">Isi Sejarah</label>
+                                <textarea class="form-control" width="100%" id="isiSejarahTambah" required></textarea>
                             </div>
                         </form>
                     </div>
@@ -195,7 +189,7 @@
 
     <script src="https://kit.fontawesome.com/c055542fa3.js" crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 	<script src="tambahdata.js"></script>
 	<script src="update.js"></script>
 	<script src="delete.js"></script>

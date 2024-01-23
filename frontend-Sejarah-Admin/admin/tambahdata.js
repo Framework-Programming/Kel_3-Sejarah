@@ -1,8 +1,7 @@
 document.getElementById('addItemForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const itemName = document.getElementById('itemName').value;
-    const itemDescription = document.getElementById('itemDescription').value;
+    const isiSejarah = document.getElementById('isiSejarahTambah').value;
     const token = localStorage.getItem('accessToken');
 
     fetch('http://127.0.0.1:8000/api/v1/Sejarah/', {
@@ -12,8 +11,7 @@ document.getElementById('addItemForm').addEventListener('submit', function(e) {
             'Authorization': `Bearer ${token}`
         },
         body: JSON.stringify({
-            name: itemName,
-            description: itemDescription
+            isi_sejarah: isiSejarah
         })
     })
     .then(response => {
